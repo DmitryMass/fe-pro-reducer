@@ -18,7 +18,7 @@ function reducer(input, action) {
     case "lowerCase":
       return input.toLowerCase();
     case "capitalize":
-      return nameCapitalize(string);
+      return nameCapitalize(input);
   }
 }
 console.log(reducer(string, "upperCase"));
