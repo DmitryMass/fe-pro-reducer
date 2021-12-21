@@ -15,7 +15,6 @@ function reducer(input, action) {
   switch (action) {
     case "upperCase":
       return input.toUpperCase();
-
     case "lowerCase":
       return input.toLowerCase();
     case "capitalize":
@@ -25,3 +24,5 @@ function reducer(input, action) {
 console.log(reducer(string, "upperCase"));
 console.log(reducer(string, "lowerCase"));
 console.log(reducer(string, "capitalize"));
+
+module.exports = reducer;
